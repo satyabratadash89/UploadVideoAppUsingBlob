@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div style="text-align:center">
+  <h1>Hi
+    Welcome to {{title}}!
+  </h1>
+  
+  <div style="text-align:center">
+<video [src]='sanitizer.bypassSecurityTrustResourceUrl(tmppath)' width="640" height="360" controls="controls"></video>
+</div>
+<input type="file" (change)="uploadFileToServer($event)"/>
+</div>
+
+

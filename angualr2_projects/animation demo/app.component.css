@@ -1,0 +1,22 @@
+.colorchange{
+  margin:10px;
+  height: 200px;
+  width:200px;
+  background-color: blue;
+  border: 2px solid blue;
+}
+
+.divsec{
+  margin: 10px;
+  width: 200px;
+  background-color: blue;
+  height: 200px;
+  border: 2px solid blue;
+}
+
+.divbox{
+  margin: 10px;
+  width: 200px;
+  background-color: darkgreen;
+  color: aliceblue;
+}

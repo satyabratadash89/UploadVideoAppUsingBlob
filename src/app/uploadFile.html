@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+<style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="text-align:center;"> 
+<h1 style="font-family: 'Fascinate Inline', cursive;">Welcome to the video Upload page!</h1>
+
+<br>
+<br>
+<br>
+<br>
+<form action="fileupload" method="post" enctype="multipart/form-data">
+<input type="file" name="filetoupload" class="button"><br>
+<br>
+<br>
+<br>
+<br>
+<button class="button">Submit <i class="fa fa-play-circle-o"></i></button>
+</form>
+</body>
+</html>

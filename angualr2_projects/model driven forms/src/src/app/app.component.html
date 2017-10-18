@@ -1,0 +1,22 @@
+<h2> Data Entry form</h2>
+<div>
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    Name: <input type="text" formControlName="name" #refname>{{refname.className}}<br>
+    <div *ngIf="customerForm.controls['name'].hasError('required')">
+      <span [ngStyle]="{'margin-left':'40px','color':'darkviolet','background-color':'lightpink'}">
+        Please enter some data</span>
+    </div>
+    <div *ngIf="customerForm.controls['name'].hasError('minlength')">
+      <span [ngStyle]="{'margin-left':'40px','color':'darkviolet','background-color':'lightpink'}">Please enter min of 4 chars</span>
+    </div>
+    <div *ngIf="customerForm.controls['name'].hasError('maxlength')">
+      <span [ngStyle]="{'margin-left':'40px','color':'darkviolet','background-color':'lightpink'}">Please enter data within 6 chars only</span>
+    </div><br>
+    Age: <input type="text" formControlName="age"><br><br>
+    Phone: <input type="text" formControlName="phone"><br><br>
+    City: <input type="text" formControlName="city"><br><br>
+    <input type="submit" [disabled]='!customerForm.valid' value="submit"/>
+  </form>
+</div>
+
+
